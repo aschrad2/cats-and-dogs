@@ -31,6 +31,19 @@ $(document).ready(function() {
 
     });
 
+    $("div#catImage").on("click", "img", function() { 
+        $(this).remove();
+        catCounter = catCounter - 1;
+        console.log(catCounter);
+    });
+    
+    $("div#dogImage").on("click", "img", function() {
+        $(this).remove();
+        dogCounter = dogCounter - 1;
+        console.log(dogCounter);
+    })
+
+
 
 
 });
